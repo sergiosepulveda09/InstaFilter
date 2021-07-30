@@ -14,6 +14,7 @@
 		8068E8EA26B36BCC00ACCE75 /* PropetryWrappersToStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E8E926B36BCC00ACCE75 /* PropetryWrappersToStruct.swift */; };
 		8068E8EC26B36E0700ACCE75 /* CreatingCustomBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E8EB26B36E0700ACCE75 /* CreatingCustomBindings.swift */; };
 		8068E8EE26B3741500ACCE75 /* ActionSheetMultipleActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E8ED26B3741500ACCE75 /* ActionSheetMultipleActions.swift */; };
+		8068E8F226B4B27E00ACCE75 /* IntegratingCoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E8F126B4B27E00ACCE75 /* IntegratingCoreImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8068E8E926B36BCC00ACCE75 /* PropetryWrappersToStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropetryWrappersToStruct.swift; sourceTree = "<group>"; };
 		8068E8EB26B36E0700ACCE75 /* CreatingCustomBindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingCustomBindings.swift; sourceTree = "<group>"; };
 		8068E8ED26B3741500ACCE75 /* ActionSheetMultipleActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetMultipleActions.swift; sourceTree = "<group>"; };
+		8068E8F126B4B27E00ACCE75 /* IntegratingCoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegratingCoreImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				8068E8E926B36BCC00ACCE75 /* PropetryWrappersToStruct.swift */,
 				8068E8EB26B36E0700ACCE75 /* CreatingCustomBindings.swift */,
 				8068E8ED26B3741500ACCE75 /* ActionSheetMultipleActions.swift */,
+				8068E8F126B4B27E00ACCE75 /* IntegratingCoreImage.swift */,
 			);
 			path = Theory;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				8068E8EA26B36BCC00ACCE75 /* PropetryWrappersToStruct.swift in Sources */,
 				8068E8EE26B3741500ACCE75 /* ActionSheetMultipleActions.swift in Sources */,
 				8068E8DA26B36A3B00ACCE75 /* InstaFilterApp.swift in Sources */,
+				8068E8F226B4B27E00ACCE75 /* IntegratingCoreImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
