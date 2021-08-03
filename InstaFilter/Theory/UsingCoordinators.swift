@@ -1,13 +1,13 @@
 //
-//  UIViewControllerInSwiftUI.swift
+//  UsingCoordinators.swift
 //  InstaFilter
 //
-//  Created by Sergio Sepulveda on 2021-08-02.
+//  Created by Sergio Sepulveda on 2021-08-03.
 //
 
 import SwiftUI
 
-struct UIViewControllerInSwiftUI: View {
+struct UsingCoordinators: View {
     
     @State private var image: Image?
     @State private var showingImagepicker: Bool = false
@@ -36,10 +36,11 @@ struct UIViewControllerInSwiftUI: View {
         }
         image = Image(uiImage: inputImage)
     }
+    
 }
 
-struct UIViewControllerInSwiftUI_Previews: PreviewProvider {
+struct UsingCoordinators_Previews: PreviewProvider {
     static var previews: some View {
-        UIViewControllerInSwiftUI()
+        UsingCoordinators()
     }
 }

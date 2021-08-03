@@ -17,6 +17,7 @@
 		8068E8F226B4B27E00ACCE75 /* IntegratingCoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E8F126B4B27E00ACCE75 /* IntegratingCoreImage.swift */; };
 		80C955A026B90F4900E5233F /* UIViewControllerInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C9559F26B90F4900E5233F /* UIViewControllerInSwiftUI.swift */; };
 		80C955A226B9104300E5233F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C955A126B9104300E5233F /* ImagePicker.swift */; };
+		80C955A426B957D200E5233F /* UsingCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C955A326B957D200E5233F /* UsingCoordinators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8068E8F126B4B27E00ACCE75 /* IntegratingCoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegratingCoreImage.swift; sourceTree = "<group>"; };
 		80C9559F26B90F4900E5233F /* UIViewControllerInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerInSwiftUI.swift; sourceTree = "<group>"; };
 		80C955A126B9104300E5233F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		80C955A326B957D200E5233F /* UsingCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingCoordinators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				8068E8F126B4B27E00ACCE75 /* IntegratingCoreImage.swift */,
 				80C9559F26B90F4900E5233F /* UIViewControllerInSwiftUI.swift */,
 				80C955A126B9104300E5233F /* ImagePicker.swift */,
+				80C955A326B957D200E5233F /* UsingCoordinators.swift */,
 			);
 			path = Theory;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				80C955A026B90F4900E5233F /* UIViewControllerInSwiftUI.swift in Sources */,
 				8068E8DC26B36A3B00ACCE75 /* ContentView.swift in Sources */,
+				80C955A426B957D200E5233F /* UsingCoordinators.swift in Sources */,
 				8068E8EC26B36E0700ACCE75 /* CreatingCustomBindings.swift in Sources */,
 				8068E8EA26B36BCC00ACCE75 /* PropetryWrappersToStruct.swift in Sources */,
 				8068E8EE26B3741500ACCE75 /* ActionSheetMultipleActions.swift in Sources */,
