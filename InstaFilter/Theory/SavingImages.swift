@@ -37,7 +37,7 @@ struct SavingImages: View {
             }
         }
         .sheet(isPresented: $showingImagepicker, onDismiss: loadImage) {
-            ImagePicker(image: self.$inputImage)
+            ImagePickerExample(image: self.$inputImage)
         }
     }
     
@@ -47,7 +47,7 @@ struct SavingImages: View {
         }
         image = Image(uiImage: inputImage)
         let imageSaver = ImageSaver()
-        imageSaver.writeToPhotoAlbum(image: inputImage)
+        imageSaver.writeToPhotoAlbum(image: inputImage )
     }
     
 }

@@ -26,7 +26,7 @@ struct UsingCoordinators: View {
             }
         }
         .sheet(isPresented: $showingImagepicker, onDismiss: loadImage) {
-            ImagePicker(image: self.$inputImage)
+            ImagePickerExample(image: self.$inputImage)
         }
     }
     
