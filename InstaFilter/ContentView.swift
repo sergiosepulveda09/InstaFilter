@@ -8,6 +8,12 @@ import CoreImage
 import CoreImage.CIFilterBuiltins
 import SwiftUI
 
+enum ValueSlider: String {
+    case Intensity = "Intensity"
+    case Radius = "Radius"
+    case Scale = "Scale"
+}
+
 struct ContentView: View {
     
     @State private var image: Image?
@@ -17,6 +23,8 @@ struct ContentView: View {
     @State private var currentFilter: CIFilter = CIFilter.sepiaTone()
     @State private var showingFilterSheet = false
     @State private var processedImage: UIImage?
+    @State private var title: String = "InstaFilter"
+    @State private var showingAlert: Bool = false
     
     let context = CIContext()
     
@@ -65,10 +73,11 @@ struct ContentView: View {
                 
                 HStack {
                     
-                    Text("Intensity")
+                    Text("\(findSliderName())")
                     Slider(value: intensity)
                     
                 }
+                
                 .padding(.vertical)
                 
                 HStack {
@@ -84,7 +93,7 @@ struct ContentView: View {
                     Button("Save") {
                         
                         guard let processedImage = self.processedImage else {
-                            print("Error")
+                            self.showingAlert.toggle()
                             return
                         }
                         let imageSaver = ImageSaver()
@@ -104,33 +113,43 @@ struct ContentView: View {
                 
             }
             .padding([.horizontal, .bottom])
-            .navigationBarTitle("Instafilter")
+            .navigationBarTitle("\(title)")
             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                 ImagePicker(image: self.$inputImage)
+            }
+            .alert(isPresented: $showingAlert) {
+                Alert(title: Text("Not Image Selected"), message: Text("Please select an image"), dismissButton: .default(Text("OK!")))
             }
             .actionSheet(isPresented: $showingFilterSheet) {
                 ActionSheet(title: Text("Select a filter"), buttons: [
                     .default(Text("Crystallize")) {
                         self.setFilter(CIFilter.crystallize())
+                        self.title = "Crystallize Filter"
                         
                     },
                     .default(Text("Edges")) {
                         self.setFilter(CIFilter.edges())
+                        self.title = "Edges Filter"
                     },
                     .default(Text("Gaussian Blur")) {
                         self.setFilter(CIFilter.gaussianBlur())
+                        self.title = "Gaussian Blur Filter"
                     },
                     .default(Text("Pixellate")) {
                         self.setFilter(CIFilter.pixellate())
+                        self.title = "Pixellate Filter"
                     },
                     .default(Text("Sepia Tone")) {
                         self.setFilter(CIFilter.sepiaTone())
+                        self.title = "Sepia Tone Filter"
                     },
                     .default(Text("Unsharp Mask")) {
                         self.setFilter(CIFilter.unsharpMask())
+                        self.title = "Unsharp Mask Filter"
                     },
                     .default(Text("Vignette")) {
                         self.setFilter(CIFilter.vignette())
+                        self.title = "Vignette Filter"
                     },
                     .cancel()
             
@@ -149,6 +168,19 @@ struct ContentView: View {
         applyProccesing()
     }
     
+    func findSliderName() -> String {
+        let inputKeys = currentFilter.inputKeys
+        if inputKeys.contains(kCIInputIntensityKey) {
+            return ValueSlider.Intensity.rawValue
+        }
+        else if inputKeys.contains(kCIInputRadiusKey) {
+            return ValueSlider.Radius.rawValue
+        }
+        else {
+            return ValueSlider.Scale.rawValue
+        }
+        
+    }
     func applyProccesing() {
         let inputKeys = currentFilter.inputKeys
         if inputKeys.contains(kCIInputIntensityKey) { currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey) }
