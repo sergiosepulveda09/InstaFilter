@@ -16,6 +16,7 @@
 		8068E8EC26B36E0700ACCE75 /* CreatingCustomBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E8EB26B36E0700ACCE75 /* CreatingCustomBindings.swift */; };
 		8068E8EE26B3741500ACCE75 /* ActionSheetMultipleActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E8ED26B3741500ACCE75 /* ActionSheetMultipleActions.swift */; };
 		8068E8F226B4B27E00ACCE75 /* IntegratingCoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068E8F126B4B27E00ACCE75 /* IntegratingCoreImage.swift */; };
+		80979A0726BCACA20074CF6B /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80979A0626BCACA20074CF6B /* ImageSaver.swift */; };
 		80C955A026B90F4900E5233F /* UIViewControllerInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C9559F26B90F4900E5233F /* UIViewControllerInSwiftUI.swift */; };
 		80C955A226B9104300E5233F /* ImagePickerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C955A126B9104300E5233F /* ImagePickerExample.swift */; };
 		80C955A426B957D200E5233F /* UsingCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C955A326B957D200E5233F /* UsingCoordinators.swift */; };
@@ -34,6 +35,7 @@
 		8068E8EB26B36E0700ACCE75 /* CreatingCustomBindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingCustomBindings.swift; sourceTree = "<group>"; };
 		8068E8ED26B3741500ACCE75 /* ActionSheetMultipleActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetMultipleActions.swift; sourceTree = "<group>"; };
 		8068E8F126B4B27E00ACCE75 /* IntegratingCoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegratingCoreImage.swift; sourceTree = "<group>"; };
+		80979A0626BCACA20074CF6B /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		80C9559F26B90F4900E5233F /* UIViewControllerInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerInSwiftUI.swift; sourceTree = "<group>"; };
 		80C955A126B9104300E5233F /* ImagePickerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerExample.swift; sourceTree = "<group>"; };
 		80C955A326B957D200E5233F /* UsingCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingCoordinators.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				8068E8D926B36A3B00ACCE75 /* InstaFilterApp.swift */,
 				80237E1326B9FF2E0039CC58 /* ImagePicker.swift */,
 				8068E8DB26B36A3B00ACCE75 /* ContentView.swift */,
+				80979A0626BCACA20074CF6B /* ImageSaver.swift */,
 				8068E8DD26B36A3C00ACCE75 /* Assets.xcassets */,
 				8068E8E226B36A3C00ACCE75 /* Info.plist */,
 				8068E8DF26B36A3C00ACCE75 /* Preview Content */,
@@ -180,6 +183,7 @@
 				8068E8EA26B36BCC00ACCE75 /* PropetryWrappersToStruct.swift in Sources */,
 				8068E8EE26B3741500ACCE75 /* ActionSheetMultipleActions.swift in Sources */,
 				80C955A226B9104300E5233F /* ImagePickerExample.swift in Sources */,
+				80979A0726BCACA20074CF6B /* ImageSaver.swift in Sources */,
 				80237E1426B9FF2E0039CC58 /* ImagePicker.swift in Sources */,
 				8068E8DA26B36A3B00ACCE75 /* InstaFilterApp.swift in Sources */,
 				8068E8F226B4B27E00ACCE75 /* IntegratingCoreImage.swift in Sources */,
